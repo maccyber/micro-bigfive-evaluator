@@ -8,9 +8,9 @@ See [bigfive-web](https://github.com/maccyber/bigfive-web) for full repo.
 
 ## Calculate score
 
-```POST```
+**POST**
 
-facet is optional
+Array with domain and score. Facet is optional.
 
 ```JavaScript
 [
@@ -76,4 +76,5 @@ $ now https://github.com/maccyber/micro-bigfive-evaluator
 
 Created by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
 
-![alt text](https://robots.kebabstudios.party/zrrrzzt.png "Robohash image of zrrrzzt")![alt text](https://robots.kebabstudios.party/maccyber.png "Robohash image of maccyber")
+![alt text](https://robots.kebabstudios.party/zrrrzzt.png "Robohash image of zrrrzzt") 
+![alt text](https://robots.kebabstudios.party/maccyber.png "Robohash image of maccyber")
