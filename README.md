@@ -2,7 +2,9 @@
 
 Example: https://bigfive-evaluator.now.sh/
 
-micro webservice that calculates score of personality test questions
+[micro](https://github.com/zeit/micro) webservice that calculates score of personality test questions
+
+See [bigfive-web](https://github.com/maccyber/bigfive-web) for full repo.
 
 ## Calculate score
 
