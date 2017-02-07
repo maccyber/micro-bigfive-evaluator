@@ -8,38 +8,64 @@ See [bigfive-web](https://github.com/maccyber/bigfive-web) for full repo.
 
 ## Calculate score
 
-```POST```
+**POST**
 
-```/calculate```
+Array with domain and score. Facet is optional.
 
 ```JavaScript
-{
-  lang: '<lang-code>',
-  items: '<10 or 20>',
-  answers: [
-    {
-      id: '<question-id>',
-      score: '<question-score>'
-    }
-  ]
-}
+[
+  {
+    "domain": "A",
+    "facet": "1",
+    "score": "3"
+  },
+  {
+    "domain": "A",
+    "facet": "1",
+    "score": "3"
+  },
+  {
+    "domain": "E",
+    "facet": "1",
+    "score": "3"
+  },
+  {
+    "domain": "E",
+    "facet": "2",
+    "score": "3"
+  }
+]
 ```
 
 returns score for each factor
 
 ```JavaScript
-{ 
-  E: 30, 
-  A: 30, 
-  C: 30, 
-  N: 30, 
-  O: 30 
+{
+  "A": {
+    "score": 6,
+    "facet": {
+      "1": {
+        "score": 6
+      }
+    }
+  },
+  "E": {
+    "score": 6,
+    "facet": {
+      "1": {
+        "score": 3
+      },
+      "2": {
+        "score": 3
+      }
+    }
+  }
 }
 ```
 
 ## Deploy using [Now](https://zeit.co/now)
 
-```sh
+```bash
 $ now https://github.com/maccyber/micro-bigfive-evaluator
 ```
 
@@ -50,3 +76,5 @@ $ now https://github.com/maccyber/micro-bigfive-evaluator
 
 Created by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
 
+![alt text](https://robots.kebabstudios.party/zrrrzzt.png "Robohash image of zrrrzzt") 
+![alt text](https://robots.kebabstudios.party/maccyber.png "Robohash image of maccyber")
