@@ -18,7 +18,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=7.4.0"
+    "node": ">=7.5.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -36,10 +36,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/maccyber/micro-bigfive-evaluator.git"
+    "url": "https://github.com/maccyber/micro-bigfive-evaluator.git"
   },
   "bugs": {
-    "url": "http://github.com/maccyber/micro-bigfive-evaluator/issues"
+    "url": "https://github.com/maccyber/micro-bigfive-evaluator/issues"
   },
   "devDependencies": {
     "coveralls": "2.11.15",
@@ -48,7 +48,7 @@
     "tap": "10.0.2"
   },
   "dependencies": {
-    "micro": "7.0.0"
+    "micro": "7.0.3"
   },
   "now": {
     "aliases": [
