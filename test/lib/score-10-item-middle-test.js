@@ -8,12 +8,12 @@ const answers = ['E', 'A', 'C', 'N', 'O']
 
 const score = calculateScore(answers)
 
-tap.equal(score['E'], 30, 'It calculates 30 for E')
+tap.equal(score['E'].score, 30, 'It calculates 30 for E')
 
-tap.equal(score['A'], 30, 'It calculates 30 for A')
+tap.equal(score['A'].score, 30, 'It calculates 30 for A')
 
-tap.equal(score['C'], 30, 'It calculates 30 for C')
+tap.equal(score['C'].score, 30, 'It calculates 30 for C')
 
-tap.equal(score['N'], 30, 'It calculates 30 for N')
+tap.equal(score['N'].score, 30, 'It calculates 30 for N')
 
-tap.equal(score['O'], 30, 'It calculates 30 for O')
+tap.equal(score['O'].score, 30, 'It calculates 30 for O')
