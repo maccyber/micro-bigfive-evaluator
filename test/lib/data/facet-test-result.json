@@ -1,20 +1,30 @@
 {
   "A": {
     "score": 6,
+    "count": 2,
+    "result": "neutral",
     "facet": {
       "1": {
-        "score": 6
+        "score": 6,
+        "count": 2,
+        "result": "neutral"
       }
     }
   },
   "E": {
     "score": 6,
+    "count": 2,
+    "result": "neutral",
     "facet": {
       "1": {
-        "score": 3
+        "score": 3,
+        "count": 1,
+        "result": "neutral"
       },
       "2": {
-        "score": 3
+        "score": 3,
+        "count": 1,
+        "result": "neutral"
       }
     }
   }
