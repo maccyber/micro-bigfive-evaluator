@@ -1,6 +1,6 @@
 # micro-bigfive-evaluator
 
-Example: https://bigfive-evaluator.now.sh/
+Example: https://evaluator.bigfive.maccyber.io/
 
 [micro](https://github.com/zeit/micro) webservice that calculates score of personality test questions
 
