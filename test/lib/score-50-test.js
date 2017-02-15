@@ -5,7 +5,6 @@ const calculateScore = require('../../lib/calculate-score')
 const answers = require('./data/50-test-results.json')
 
 const score = calculateScore(answers)
-console.log(score)
 
 tap.equal(score['E'].score, 31, 'It calculates 31 for E')
 

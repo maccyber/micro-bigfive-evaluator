@@ -11,7 +11,9 @@ module.exports = async (req, res) => {
   const {query} = await parse(req.url, true)
   const data = req.method === 'POST' ? await json(req) : query
   if (req.method === 'POST') {
-    result = calculateScore(data)
+    const scores = calculateScore(data.answers)
+    data.data = scores
+    result = data
   } else {
     const readme = readFileSync('./README.md', 'utf-8')
     result = marked(readme)

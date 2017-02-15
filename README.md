@@ -17,65 +17,100 @@ See [bigfive-web](https://github.com/maccyber/bigfive-web) for full repo.
 Array with domain and score. Facet is optional.
 
 ```JavaScript
-[
-  {
-    "domain": "A",
-    "facet": "1",
-    "score": "3"
-  },
-  {
-    "domain": "A",
-    "facet": "1",
-    "score": "3"
-  },
-  {
-    "domain": "E",
-    "facet": "1",
-    "score": "3"
-  },
-  {
-    "domain": "E",
-    "facet": "2",
-    "score": "3"
-  }
-]
+{
+  "timeElapsed": -51,
+  "ip": "127.0.0.1",
+  "lang": "en",
+  "test": "50-IPIP-NEO-PI-R",
+  "totalQuestions": 50,
+  "answers": [
+    {
+      "domain": "A",
+      "facet": "1",
+      "score": "3"
+    },
+    {
+      "domain": "A",
+      "facet": "1",
+      "score": "3"
+    },
+    {
+      "domain": "E",
+      "facet": "1",
+      "score": "3"
+    },
+    {
+      "domain": "E",
+      "facet": "2",
+      "score": "3"
+    }
+  ]
+}
 ```
 
 returns score for each factor
 
 ```JavaScript
 {
-  "A": {
-    "score": 6,
-    "count": 2,
-    "result": "neutral",
-    "facet": {
-      "1": {
-        "score": 6,
-        "count": 2,
-        "result": "neutral"
-      }
+  "timeElapsed": -51,
+  "ip": "127.0.0.1",
+  "lang": "en",
+  "test": "50-IPIP-NEO-PI-R",
+  "totalQuestions": 50,
+  "answers": [
+    {
+      "domain": "A",
+      "facet": "1",
+      "score": "3"
+    },
+    {
+      "domain": "A",
+      "facet": "1",
+      "score": "3"
+    },
+    {
+      "domain": "E",
+      "facet": "1",
+      "score": "3"
+    },
+    {
+      "domain": "E",
+      "facet": "2",
+      "score": "3"
     }
-  },
-  "E": {
-    "score": 6,
-    "count": 2,
-    "result": "neutral",
-    "facet": {
-      "1": {
-        "score": 3,
-        "count": 1,
-        "result": "neutral"
-      },
-      "2": {
-        "score": 3,
-        "count": 1,
-        "result": "neutral"
+  ],
+  "data": {
+    "A": {
+      "score": 6,
+      "count": 2,
+      "result": "neutral",
+      "facet": {
+        "1": {
+          "score": 6,
+          "count": 2,
+          "result": "neutral"
+        }
+      }
+    },
+    "E": {
+      "score": 6,
+      "count": 2,
+      "result": "neutral",
+      "facet": {
+        "1": {
+          "score": 3,
+          "count": 1,
+          "result": "neutral"
+        },
+        "2": {
+          "score": 3,
+          "count": 1,
+          "result": "neutral"
+        }
       }
     }
   }
 }
-
 ```
 
 ## Deploy using [Now](https://zeit.co/now)
