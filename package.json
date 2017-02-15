@@ -48,12 +48,11 @@
     "tap": "10.1.0"
   },
   "dependencies": {
-    "micro": "7.0.6"
+    "marked": "0.3.6",
+    "micro": "7.0.3"
   },
   "now": {
-    "aliases": [
-      "bigfive-evaluator.now.sh"
-    ],
+    "alias": "evaluator.bigfive.maccyber.io",
     "env": {
       "NODE_ENV": "production"
     }
