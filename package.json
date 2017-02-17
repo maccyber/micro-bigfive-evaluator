@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "marked": "0.3.6",
-    "micro": "7.0.3"
+    "micro": "7.0.6"
   },
   "now": {
     "alias": "evaluator.bigfive.maccyber.io",
