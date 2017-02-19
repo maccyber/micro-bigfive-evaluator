@@ -27,7 +27,7 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
-    "start": "micro -p 3000"
+    "start": "micro"
   },
   "keywords": [
     "microservice",
@@ -49,12 +49,13 @@
   },
   "dependencies": {
     "marked": "0.3.6",
-    "micro": "7.0.3"
+    "micro": "7.0.6"
   },
   "now": {
     "alias": "evaluator.bigfive.maccyber.io",
     "env": {
       "NODE_ENV": "production"
-    }
+    },
+    "type": "npm"
   }
 }
