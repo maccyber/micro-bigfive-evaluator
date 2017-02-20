@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/maccyber/micro-bigfive-evaluator.svg?branch=master)](https://travis-ci.org/maccyber/micro-bigfive-evaluator)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Code Climate](https://codeclimate.com/github/maccyber/micro-bigfive-evaluator/badges/gpa.svg)](https://codeclimate.com/github/maccyber/micro-bigfive-evaluator)
 
 # micro-bigfive-evaluator
 
