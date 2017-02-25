@@ -1,6 +1,6 @@
 'use strict'
 
-const tap = require('tap')
+const test = require('ava')
 const calculateScore = require('../../lib/calculate-score')
 const answers = ['E', 'A', 'C', 'N', 'O']
                   .map(letter => Array.from({length: 10}, (v, i) => i).map(num => Object.assign({domain: letter, score: 3})))
@@ -8,12 +8,14 @@ const answers = ['E', 'A', 'C', 'N', 'O']
 
 const score = calculateScore(answers)
 
-tap.equal(score['E'].score, 30, 'It calculates 30 for E')
+test('validates results', t => {
+  t.deepEqual(score['E'].score, 30, 'It calculates 30 for E')
 
-tap.equal(score['A'].score, 30, 'It calculates 30 for A')
+  t.deepEqual(score['A'].score, 30, 'It calculates 30 for A')
 
-tap.equal(score['C'].score, 30, 'It calculates 30 for C')
+  t.deepEqual(score['C'].score, 30, 'It calculates 30 for C')
 
-tap.equal(score['N'].score, 30, 'It calculates 30 for N')
+  t.deepEqual(score['N'].score, 30, 'It calculates 30 for N')
 
-tap.equal(score['O'].score, 30, 'It calculates 30 for O')
+  t.deepEqual(score['O'].score, 30, 'It calculates 30 for O')
+})
