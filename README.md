@@ -118,12 +118,19 @@ returns score for each factor
 $ now https://github.com/maccyber/micro-bigfive-evaluator
 ```
 
+## Related
+- [bigfive-web](https://github.com/maccyber/bigfive-web) Web frontend for bigfive tests
+- [micro-bigfive-questions](https://github.com/maccyber/micro-bigfive-questions) Webservice that returns bigfive questions
+- [micro-bigfive-generator](https://github.com/maccyber/micro-bigfive-generator) Webservice that generates and saves results to bigfive-web
+- [micro-bigfive-results](https://github.com/maccyber/micro-bigfive-results) Webservice that returns bigfive informative test results
+- [micro-bigfive-save](https://github.com/maccyber/micro-bigfive-save) Webservice that stores bigfive answers
+
 ## License
 [MIT](LICENSE)
 
 ## About
 
-Created by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
+Created with <3 by [zrrzzt](https://github.com/zrrrzzt) and [maccyber](https://github.com/maccyber)
 
 ![alt text](https://robots.kebabstudios.party/zrrrzzt.png "Robohash image of zrrrzzt") 
 ![alt text](https://robots.kebabstudios.party/maccyber.png "Robohash image of maccyber")

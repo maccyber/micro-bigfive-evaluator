@@ -1,9 +1,11 @@
 'use strict'
 
-const tap = require('tap')
+const test = require('ava')
 const calculateScore = require('../../lib/calculate-score')
 const facetData = require('./data/facet-test-data.json')
 const facetExpected = require('./data/facet-test-result.json')
 const facet = calculateScore(facetData)
 
-tap.equal(JSON.stringify(facetExpected), JSON.stringify(facet), 'returns expected result')
+test('validates results', t => {
+  t.deepEqual(facetExpected, facet, 'returns expected result')
+})
