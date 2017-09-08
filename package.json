@@ -18,7 +18,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=8.4.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -27,6 +27,7 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
+    "dev": "micro-dev",
     "start": "micro"
   },
   "keywords": [
@@ -42,17 +43,18 @@
     "url": "https://github.com/maccyber/micro-bigfive-evaluator/issues"
   },
   "devDependencies": {
-    "ava": "0.18.2",
-    "axios": "0.15.3",
-    "coveralls": "2.11.16",
-    "nsp": "2.6.2",
-    "nyc": "10.1.2",
-    "standard": "9.0.0",
-    "test-listen": "1.0.1"
+    "ava": "0.22.0",
+    "axios": "0.16.2",
+    "coveralls": "2.13.1",
+    "micro-dev": "1.2.2",
+    "nsp": "2.8.0",
+    "nyc": "11.2.1",
+    "standard": "10.0.3",
+    "test-listen": "1.0.2"
   },
   "dependencies": {
     "marked": "0.3.6",
-    "micro": "7.0.6"
+    "micro": "8.0.4"
   },
   "now": {
     "alias": "evaluator.bigfive.maccyber.io",
