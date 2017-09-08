@@ -9,9 +9,9 @@ Example: https://evaluator.bigfive.maccyber.io/
 
 See [bigfive-web](https://github.com/maccyber/bigfive-web) for full repo.
 
-## Calculate score
+## API - Calculate score
 
-**POST**
+**POST /calculate **
 
 Array with domain and score. Facet is optional.
 

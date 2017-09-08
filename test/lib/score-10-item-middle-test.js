@@ -6,7 +6,7 @@ const answers = ['E', 'A', 'C', 'N', 'O']
                   .map(letter => Array.from({length: 10}, (v, i) => i).map(num => Object.assign({domain: letter, score: 3})))
                   .reduce((a, b) => a.concat(b), [])
 
-const score = calculateScore(answers)
+const score = calculateScore({answers: answers})
 
 test('validates results', t => {
   t.deepEqual(score['E'].score, 30, 'It calculates 30 for E')

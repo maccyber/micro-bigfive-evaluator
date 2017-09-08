@@ -1,11 +1,5 @@
-###########################################################
-#
-# Dockerfile for micro-bigfive-evaluator
-#
-###########################################################
-
-# Setting the base to nodejs 7
-FROM mhart/alpine-node:7
+# Setting the base to nodejs 8.4.0
+FROM node:8.4.0-alpine
 
 # Maintainer
 MAINTAINER Jonas Enge

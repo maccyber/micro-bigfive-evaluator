@@ -1,24 +1,23 @@
 'use strict'
 
-const { parse } = require('url')
-const { json, send } = require('micro')
-const readFileSync = require('fs').readFileSync
-const marked = require('marked')
-const calculateScore = require('./lib/calculate-score')
+// Modules
+const Router = require('router')
+const finalhandler = require('finalhandler')
+const cors = require('cors')
 
-module.exports = async (req, res) => {
-  let result = {}
-  const {query} = await parse(req.url, true)
-  const data = req.method === 'POST' ? await json(req) : query
-  if (req.method === 'POST') {
-    const scores = calculateScore(data.answers)
-    data.data = scores
-    result = data
-  } else {
-    const readme = readFileSync('./README.md', 'utf-8')
-    result = marked(readme)
-  }
-  let status = result.error ? 500 : 200
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  send(res, status, result)
+// Utils
+const handlers = require('./lib/handlers')
+
+// Initialize a new router
+const router = Router()
+
+// CORS
+router.use(cors())
+
+router.get('/', handlers.getFrontpage)
+router.post('/', handlers.calculateScore)
+router.post('/calculate', handlers.calculateScore)
+
+module.exports = (request, response) => {
+  router(request, response, finalhandler(request, response))
 }
