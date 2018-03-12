@@ -3,6 +3,8 @@
 
 # micro-bigfive-evaluator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/maccyber/micro-bigfive-evaluator.svg)](https://greenkeeper.io/)
+
 Example: https://evaluator.bigfive.maccyber.io/
 
 [micro](https://github.com/zeit/micro) webservice that calculates score of personality test questions
